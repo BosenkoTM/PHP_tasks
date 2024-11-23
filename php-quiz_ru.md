@@ -1154,284 +1154,284 @@ echo $a;
 - [ ] HelloWorld
 - [ ] Выведет сообщение об ошибке
 #### В130. Какой элемент HTML используется для определения заголовка документа?
-a) <title>
-b) <header>
-c) <heading>
+- [ ] <title>
+- [ ] <header>
+- [ ] <heading>
 d) <top>
 #### В131. Как правильно подключить внешний JavaScript файл script.js?
-a) <script href="script.js">
-b) <script name="script.js">
-c) <script src="script.js">
+- [ ] <script href="script.js">
+- [ ] <script name="script.js">
+- [ ] <script src="script.js">
 d) <script file="script.js">
 #### В132. Какой язык используется для стилизации веб-страниц?
-a) HTML
-b) JavaScript
-c) Python
+- [ ] HTML
+- [ ] JavaScript
+- [ ] Python
 d) CSS
 #### В133. Какой метод HTTP используется для получения данных с сервера?
-a) POST
-b) GET
-c) PUT
+- [ ] POST
+- [ ] GET
+- [ ] PUT
 d) DELETE
 #### В134. Как создать многомерный массив в PHP?
-a) array(array(1,2), array(3,4))
-b) [1,2][3,4]
-c) array[1,2][3,4]
+- [ ] array(array(1,2), array(3,4))
+- [ ] [1,2][3,4]
+- [ ] array[1,2][3,4]
 d) {[1,2],[3,4]}
 #### В135. Какая команда используется для создания новой виртуальной машины в Vagrant?
-a) vagrant new
-b) vagrant create
-c) vagrant init
+- [ ] vagrant new
+- [ ] vagrant create
+- [ ] vagrant init
 d) vagrant start
 #### В136. Какая команда Git используется для создания новой ветки?
-a) git create branch
-b) git branch new
-c) git branch
+- [ ] git create branch
+- [ ] git branch new
+- [ ] git branch
 d) git checkout -b
 #### В137. Что такое PDO в PHP?
-a) PHP Data Objects
-b) PHP Database Operations
-c) PHP Data Operations
+- [ ] PHP Data Objects
+- [ ] PHP Database Operations
+- [ ] PHP Data Operations
 d) PHP Database Objects
 #### В138. Как объявить константу в PHP?
-a) const NAME = value;
-b) constant NAME = value;
-c) define('NAME', value);
+- [ ] const NAME = value;
+- [ ] constant NAME = value;
+- [ ] define('NAME', value);
 d) set NAME = value;
 #### В139. Какой цикл в PHP выполняется минимум один раз?
-a) while
-b) for
-c) do...while
+- [ ] while
+- [ ] for
+- [ ] do...while
 d) foreach
 #### В140. Что означает аббревиатура MVC?
-a) Model View Connection
-b) Model View Controller
-c) Model View Computer
+- [ ] Model View Connection
+- [ ] Model View Controller
+- [ ] Model View Computer
 d) Model View Class
 #### В141. Как получить длину массива в PHP?
-a) len()
-b) length()
-c) count()
+- [ ] len()
+- [ ] length()
+- [ ] count()
 d) size()
 #### В142. Какой оператор используется для слияния строк в PHP?
-a) +
-b) .
-c) &
+- [ ] +
+- [ ] .
+- [ ] &
 d) &&
 #### В143. Как правильно начать PHP-скрипт?
-a) <php>
-b) <?php
-c) <?
+- [ ] <php>
+- [ ] <?php
+- [ ] <?
 d) <script php>
 #### В144. Какой метод HTTP используется для обновления данных?
-a) POST
-b) GET
-c) PUT
+- [ ] POST
+- [ ] GET
+- [ ] PUT
 d) DELETE
 #### В145. Как объявить функцию в PHP?
-a) function myFunction()
-b) def myFunction()
-c) void myFunction()
+- [ ] function myFunction()
+- [ ] def myFunction()
+- [ ] void myFunction()
 d) new function()
 #### В146. Какой тип базы данных чаще всего используется с PHP?
-a) MongoDB
-b) MySQL
-c) SQLite
+- [ ] MongoDB
+- [ ] MySQL
+- [ ] SQLite
 d) PostgreSQL
 #### В147. Что такое Laravel?
-a) CMS
-b) Framework
-c) Database
+- [ ] CMS
+- [ ] Framework
+- [ ] Database
 d) Programming Language
 #### В148. Как получить значение из GET-запроса в PHP?
-a) request.GET['name']
-b) $_GET['name']
-c) GET('name')
+- [ ] request.GET['name']
+- [ ] $_GET['name']
+- [ ] GET('name')
 d) get.value('name')
 #### В149. Какой тег используется для создания таблицы в HTML?
-a) <table>
-b) <tab>
-c) <grid>
+- [ ] <table>
+- [ ] <tab>
+- [ ] <grid>
 d) <tabular>
 #### В150. Как проверить существование файла в PHP?
-a) file_exists()
-b) is_file()
-c) check_file()
+- [ ] file_exists()
+- [ ] is_file()
+- [ ] check_file()
 d) exists()
 #### В151. Что такое Composer в PHP?
-a) Text editor
-b) Package manager
-c) Framework
+- [ ] Text editor
+- [ ] Package manager
+- [ ] Framework
 d) Database
 #### В152. Как объявить переменную в PHP?
-a) var x = 5;
-b) let x = 5;
-c) $x = 5;
+- [ ] var x = 5;
+- [ ] let x = 5;
+- [ ] $x = 5;
 d) int x = 5;
 #### В153. Какая функция используется для перенаправления в PHP?
-a) redirect()
-b) header()
-c) location()
+- [ ] redirect()
+- [ ] header()
+- [ ] location()
 d) goto()
 #### В154. Как получить текущую дату в PHP?
-a) date('Y-m-d')
-b) getDate()
-c) currentDate()
+- [ ] date('Y-m-d')
+- [ ] getDate()
+- [ ] currentDate()
 d) now()
 #### В155. Что такое Ajax?
-a) Programming language
-b) Database
-c) Asynchronous JavaScript and XML
+- [ ] Programming language
+- [ ] Database
+- [ ] Asynchronous JavaScript and XML
 d) Web server
 #### В156. Как закомментировать строку в PHP?
-a) // Comment
-b) # Comment
-c) /* Comment */
+- [ ] // Comment
+- [ ] # Comment
+- [ ] /* Comment */
 d) Все варианты верны
 #### В157. Какой метод массива удаляет последний элемент в PHP?
-a) pop()
-b) array_pop()
-c) remove_last()
+- [ ] pop()
+- [ ] array_pop()
+- [ ] remove_last()
 d) delete_last()
 #### В158. Как получить тип переменной в PHP?
-a) typeof()
-b) gettype()
-c) type()
+- [ ] typeof()
+- [ ] gettype()
+- [ ] type()
 d) vartype()
 #### В159. Что такое SVN?
-a) Source Version Network
-b) Subversion
-c) Source Version Native
+- [ ] Source Version Network
+- [ ] Subversion
+- [ ] Source Version Native
 d) System Version Network
 #### В160. Как создать сессию в PHP?
-a) session_start()
-b) start_session()
-c) create_session()
+- [ ] session_start()
+- [ ] start_session()
+- [ ] create_session()
 d) $_SESSION.start()
 #### В161. Какой порт по умолчанию используется для HTTP?
-a) 8080
-b) 443
-c) 80
+- [ ] 8080
+- [ ] 443
+- [ ] 80
 d) 3306
 #### В162. Как подключить файл в PHP (с проверкой)?
-a) include()
-b) require()
-c) import()
+- [ ] include()
+- [ ] require()
+- [ ] import()
 d) using()
 #### В163. Что такое cookie в веб-разработке?
-a) Session data
-b) Browser cache
-c) Small data stored on client
+- [ ] Session data
+- [ ] Browser cache
+- [ ] Small data stored on client
 d) Server configuration
 #### В164. Как получить последнюю ошибку MySQL в PHP?
-a) mysql_error()
-b) get_last_error()
-c) mysqli_error()
+- [ ] mysql_error()
+- [ ] get_last_error()
+- [ ] mysqli_error()
 d) db_error()
 #### В165. Какой метод HTTP используется для удаления данных?
-a) REMOVE
-b) DELETE
-c) UNLINK
+- [ ] REMOVE
+- [ ] DELETE
+- [ ] UNLINK
 d) DESTROY
 #### В166. Как проверить, существует ли переменная в PHP?
-a) exists()
-b) isset()
-c) has_var()
+- [ ] exists()
+- [ ] isset()
+- [ ] has_var()
 d) defined()
 #### В167. Что такое XSS?
-a) XML Style Sheet
-b) Cross-site Scripting
-c) Extended Style Sheet
+- [ ] XML Style Sheet
+- [ ] Cross-site Scripting
+- [ ] Extended Style Sheet
 d) External Server Script
 #### В168. Как получить IP-адрес клиента в PHP?
-a) getIP()
-b) $_SERVER['REMOTE_ADDR']
-c) ip_address()
+- [ ] getIP()
+- [ ] $_SERVER['REMOTE_ADDR']
+- [ ] ip_address()
 d) client_ip()
 #### В169. Какой тип данных не существует в PHP?
-a) string
-b) integer
-c) char
+- [ ] string
+- [ ] integer
+- [ ] char
 d) boolean
 
 Тема «Инструментальные средства разработки Internet-приложений»
 #### В170. Какой язык разметки используется для создания структуры веб-страницы?
-a) CSS
-b) JavaScript
-c) HTML
+- [ ] CSS
+- [ ] JavaScript
+- [ ] HTML
 d) PHP
 #### В171. Что такое DOM в контексте веб-разработки?
-a) Digital Object Model
-b) Document Object Model
-c) Data Object Model
+- [ ] Digital Object Model
+- [ ] Document Object Model
+- [ ] Data Object Model
 d) Document Oriented Model
 #### В172. Какой фреймворк написан на Ruby?
-a) Laravel
-b) Django
-c) Ruby on Rails
+- [ ] Laravel
+- [ ] Django
+- [ ] Ruby on Rails
 d) Express.js
 #### В173. Какой паттерн проектирования используется в большинстве современных фреймворков?
-a) Singleton
-b) MVC
-c) Factory
+- [ ] Singleton
+- [ ] MVC
+- [ ] Factory
 d) Observer
 #### В174. Какой тип данных отсутствует в JavaScript?
-a) Number
-b) String
-c) Integer
+- [ ] Number
+- [ ] String
+- [ ] Integer
 d) Boolean
 
 Тема «Технологии управления крупными web-проектами» (В175-В179)
 #### В175. Какая команда используется для клонирования репозитория в Git?
-a) git clone
-b) git copy
-c) git pull
+- [ ] git clone
+- [ ] git copy
+- [ ] git pull
 d) git fetch
 #### В176. Что такое Vagrant?
-a) Система контроля версий
-b) Средство виртуализации
-c) Web-сервер
+- [ ] Система контроля версий
+- [ ] Средство виртуализации
+- [ ] Web-сервер
 d) База данных
 #### В177. Какая команда создает новую ветку в SVN?
-a) svn branch
-b) svn create
-c) svn copy
+- [ ] svn branch
+- [ ] svn create
+- [ ] svn copy
 d) svn new
 #### В178. Что такое VirtualBox?
-a) Облачное хранилище
-b) Система виртуализации
-c) Веб-сервер
+- [ ] Облачное хранилище
+- [ ] Система виртуализации
+- [ ] Веб-сервер
 d) Система контроля версий
 #### В179. Какая команда в Git используется для отправки изменений на удаленный сервер?
-a) git commit
-b) git push
-c) git send
+- [ ] git commit
+- [ ] git push
+- [ ] git send
 d) git upload
 
 Тема «Способы и средства тестирования и размещения web-проекта на хостинге»
 #### В180. Какой протокол используется для безопасной передачи данных в web?
-a) HTTP
-b) FTP
-c) HTTPS
+- [ ] HTTP
+- [ ] FTP
+- [ ] HTTPS
 d) SMTP
 #### В181. Какой порт по умолчанию используется для FTP?
-a) 80
-b) 21
-c) 443
+- [ ] 80
+- [ ] 21
+- [ ] 443
 d) 3306
 #### В182. Что такое IP-адрес версии IPv4?
-a) 32-битный адрес
-b) 64-битный адрес
-c) 128-битный адрес
+- [ ] 32-битный адрес
+- [ ] 64-битный адрес
+- [ ] 128-битный адрес
 d) 16-битный адрес
 #### В183. Какой метод HTTP используется для отправки конфиденциальных данных?
-a) GET
-b) POST
-c) PUT
+- [ ] GET
+- [ ] POST
+- [ ] PUT
 d) HEAD
 #### В184. Что такое DNS?
-a) Data Network Service
-b) Domain Name System
-c) Digital Network Service
+- [ ] Data Network Service
+- [ ] Domain Name System
+- [ ] Digital Network Service
 d) Domain Network Service
 
