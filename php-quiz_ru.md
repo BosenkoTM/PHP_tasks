@@ -1656,20 +1656,20 @@ echo $a;
 - [ ] Database
 - [ ] Programming Language
 #### В148. Как получить значение из GET-запроса в PHP?
-- [ ] request.GET['name']
-- [ ] $_GET['name']
-- [ ] GET('name')
-- [ ] get.value('name')
+- [ ] `request.GET['name']`
+- [ ] `$_GET['name']`
+- [ ] `GET('name')`
+- [ ] `get.value('name')`
 #### В149. Какой тег используется для создания таблицы в HTML?
-- [ ] <table>
-- [ ] <tab>
-- [ ] <grid>
-- [ ] <tabular>
+- [ ] `<table>`
+- [ ] `<tab>`
+- [ ] `<grid>`
+- [ ] `<tabular>`
 #### В150. Как проверить существование файла в PHP?
-- [ ] file_exists()
-- [ ] is_file()
-- [ ] check_file()
-- [ ] exists()
+- [ ] `file_exists()`
+- [ ] `is_file()`
+- [ ] `check_file()`
+- [ ] `exists()`
 #### В151. Что такое Composer в PHP?
 - [ ] Text editor
 - [ ] Package manager
