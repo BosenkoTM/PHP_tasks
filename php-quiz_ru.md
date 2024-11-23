@@ -1,7 +1,7 @@
 # Контрольное тестирование по курсу "Веб-программирование"
 
 #### В1. Результатом выполнения скрипта является?
-echo 76 <=> '76 trombones';
+`echo 76 <=> '76 trombones';`
 
 - [ ] 1
 - [ ] -1
@@ -14,15 +14,20 @@ echo 76 <=> '76 trombones';
 - [ ] $encrypted = md5($password);
 - [ ] $encrypted = password_hash($password, PASSWORD_DEFAULT);
 #### В3. Что делает этот скрипт?
+
+```php
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 if ($email === false) {
     $emailErr = "Please re-enter valid email";
 }
-- [ ] Это гарантирует, что адрес электронной почты является хорошим и работоспособным адресом.
-- [ ] Это делает ввод электронного письма в базу данных безопасным.
-- [ ] Он присваивает адрес электронной почты переменной, а затем удаляет все недопустимые символы из переменной $email.
-- [ ] Он проверяет правильность формирования адреса электронной почты.
+```
+- [ ] Он проверяет, является ли адрес электронной почты правильным и функциональным..
+- [ ] Он делает адрес электронной почты безопасным для ввода в базу данных.
+- [ ] Он присваивает адрес электронной почты переменной, а затем удаляет все недействительные символы из переменной $email.
+- [ ] Он проверяет, правильно ли сформирован адрес электронной почты.
 #### В4. В следующем скрипте какая строка(и) вызовет ошибку(и)?
+
+ ```php
  <?php
        $count = 0;
        $_xval = 5;
@@ -32,6 +37,8 @@ if ($email === false) {
        $will i work = 6;
        $3blindmice = 3;
  ?>
+```
+
 - [ ] Строка 6 вызовет ошибку, поскольку вы не сможете переназначить новое значение переменной, которая уже была установлена.
 - [ ] Строки 7 и 8 вызовут ошибку. В строке 7 есть пробел в $will i work, а должно быть $will_i_work. Строка 8 не может начинаться с числа, потому что это переменная.
 - [ ] Строка 5 вызовет ошибку, поскольку some_string должна быть someString.
@@ -67,17 +74,23 @@ if ($email === false) {
  ''
  -1
 #### В11. Укажите недостающий элемент в скрипте, который должен создавать тестовые куки?
+
+```php
 $string_name = "testcookie";
 $string_value = "This is a test cookie";
 $expiry_info = info()+259200;
 $string_domain = "localhost.localdomain";
+```
+
 - [ ] Отсутствует $_REQUEST.
 - [ ] Массив $_COOKIES отсутствует.
 - [ ] Сеанс cookie отсутствует.
 - [ ] call setcookie() отсутствует.
 
 #### В12. Чему равно значение $total?
-$total = 2 + 5 * 20 - 6 / 3
+
+`$total = 2 + 5 * 20 - 6 / 3`
+
 - [ ] 44
 - [ ] 138
 - [ ] 126
@@ -93,11 +106,15 @@ $total = 2 + 5 * 20 - 6 / 3
 - [ ] $cat = new Pet();
 - [ ] все ответы правильные
 #### В15. Выберите наиболее подходящее пояснение работы скрипта?
+
+```php
 if (!$_SESSION['myusername'])
 {
   header('locaton: /login.php');
   exit;
 }
+```
+
 - [ ] Этот скрипт завершает сеанс для myusername.
 - [ ] В результате работы этого скрипта начинают сохраняться файлы cookie.
 - [ ] Этот скрипт проверяет имя пользователя и пароль.
@@ -119,32 +136,48 @@ if (!$_SESSION['myusername'])
 - [ ] Эту функцию можно использовать, если требуется, чтобы PHP-скрипт выполнялся бесконечно.
 #### В19. Функция PHP array_reduce() принимает функцию обратного вызова, которая принимает значение, которое используется на каждой итерации, текущим элементом в массиве, и уменьшает массив до одного значения. Какой пример скрипта будет суммировать и выводить значения в полученном массиве?
 ­
-a)
+- [ ] &shy;
+
+```php
 <?php
   echo array_reduce([1, 2, 5, 10, 11], function ($item, $carry) {
       $carry = $carry + $item;
   });
 ?>
-b)
+```
+
+- [ ] &shy;
+
+```php
   <?php
   echo array_reduce([1, 2, 5, 10, 11], function ($carry, $item) {
       return $carry = $item + $item;
   });
 ?>
-c)
-  <?php
+```
+
+- [ ] &shy;
+
+```php
   array_reduce([11 2, 5, 10, 11], function ($item, $carry) {
       echo $carry + $item;
   });
 ?>
-d)
-  <?php
+```
+
+- [ ] &shy;
+
+```php
   echo array_reduce([1, 2, 5, 10, 11], function ($carry, $item) {
       return $carry += $item;
   });
 ?>
+```
 #### В20. Какой PHP-скрипт использует конструктор для отображения строки «Winter is almost over!»?
-a)
+
+- [ ] &shy;
+
+```php
   class MyClass {
   public function _construct()
   {
@@ -152,7 +185,11 @@ a)
   }
   }
   $userclass = new MyClass;
-b)
+```
+
+- [ ] &shy;
+
+```php
   class MyClass {
   public function _construct()
   {
@@ -160,7 +197,11 @@ b)
   }
   }
   $userclass = new MyClass;
-c)
+```
+
+- [ ] &shy;
+
+```php
   class MyClass {
   public function _construct()
   {
@@ -168,7 +209,11 @@ c)
   }
   }
   $userclass = new MyClass;
-d)
+```
+
+- [ ] &shy;
+
+```php
   class MyClass {
   public function _construct()
   {
@@ -176,6 +221,7 @@ d)
   }
   }
   $userclass = MyClass;
+```
 #### В21. Как устранить ошибку «call to undefined function»?
 - [ ] Убедитесь, что вы импортировали файл, содержащий функцию.
 - [ ] Убедитесь, что вы правильно написали имя функции.
@@ -194,14 +240,20 @@ d)
 - [ ] Браузер выдаст ошибку, так как в конце команды echo нет точки с запятой.
 
 #### В24. Какой оператор используют, чтобы найти остаток от деления?
+
 - [ ] /
 - [ ] %
 - [ ] //
 - [ ] DIV
+      
 #### В25. Какоео значение трех точек в сигнатуре функции?
+
+```php
 function process(...$vals) {
     // do some processing
 }
+```
+
 - [ ] Это делает функцию вариативной, позволяя ей принимать в качестве аргумента массив, содержащий произвольное количество значений.
 - [ ] Это делает функцию вариативной, позволяя ей принимать произвольное количество аргументов, которые преобразуются в массив внутри функции.
 - [ ] Они временно отключает функцию на время отладки других частей скрипта.
@@ -222,33 +274,46 @@ function process(...$vals) {
 - [ ] Убедиться, что не пропущено ни одной точки с запятой 
 - [ ] все ответы правильные
 #### В29. Какой способ создания массива "seasons" правильный?
+
+```php
 seasons=array(
     1=>'spring',
     2=>'summer',
     3=>'autumn',
     4=>'winter',
 );
+```
+
 - [ ] $seasons=array(spring,summer,autumn,winter);
 - [ ] $seasons=('spring','summer','autumn','winter');
 - [ ] $seasons=['spring','summer','autumn','winter'];
 #### В30. И self`, и this являются ключевыми словами, которые можно использовать для ссылки на переменные-члены класса. Разница состоит в том, что $this->member следует использовать для ____ членов, а self::$member следует использовать для _____членов.
+
 - [ ] частных, публичных
 - [ ] объектных, примитивных
 - [ ] нестатических, статических
 - [ ] конкретных, абстрактных
+      
 #### В31. Что выведет этот код?
+
+```php
 $mathe=array('archi','euler','pythagoras');
 array_push($mathe,'hypatia');
 array_push($mathe,'fibonacci');
 array_pop($mathe);
 echo array_pop($mathe);
 echo sizeof($mathe);
+```
+
 - [ ] euler3
 - [ ] hypatia5
 - [ ] hypatia3
 - [ ] fibonacci4
+      
 #### В32. Вы используете следующий скрипт для поиска любимой пользовательской группы, но он возвращает false. Какой шаг решит эту проблему?
-isset ($_GET['fav_band'])
+
+`isset ($_GET['fav_band'])`
+
 - [ ] проверить, включен ли fav_band в строку запроса в верхней части браузера
 - [ ] просмотреть исходный код формы и убедиться, что есть поле ввода с именем fav_band
 - [ ] вывести все, что было передано в запросе: print_r($_REQUEST);
@@ -269,6 +334,8 @@ isset ($_GET['fav_band'])
 - [ ] return
 - [ ] continue
 #### В36. Оператор php НЕ определяется спецсимволом !. Учитывая фрагмент ниже, есть ли выход из цикла и какой его результат?
+
+```php
 <?php
 $num = 21;
 
@@ -281,6 +348,8 @@ if ($num%2!=0) {
  echo "$num является четным числом";
 }
 ?>
+```
+
 - [ ] есть вывод '2 является четным числом'
 - [ ] вывод '21 является нечетным числом'
 - [ ] нет вывода. Синтаксическая ошибка из-за отсутствия точки с запятой в конце.
@@ -291,37 +360,48 @@ if ($num%2!=0) {
 - [ ] php -v
 - [ ] php -m
 #### Q38. Для HTML-формы ниже, какой корректно функционирующий скрипт проверяет входное поле «mail», чтобы убедиться, что оно заполнено, прежде чем продолжить?
+
+```html
 <form method="post" action="test.php">
  Email: <input type="text" name="mail" />
  <input type="submit" />
 </form>
-a)
+```
+
+```php
 if (!empty($_POST["mail"])) {
  echo "Yes, mail is set";
 } else {
  echo "No, mail is not set";
 }
+```
 
-b)
+```php
 if ($_POST["mail"] == "") {
  echo "No, mail is not set";
 } else {
  echo "Yes, mail is set";
 }
-c)
+```
+
+```php
 if (isset($_POST["mail"])) {
  echo "Yes, mail is set";
 } else {
  echo "No, mail is not set";
 }
-d)
+
+
+```php
 if ($_POST["mail"]) {
  echo "Yes, mail is set";
 } else {
  echo "No, mail is not set";
 }
+```
 #### В39. Какое значение имеет $result в этом вычислении?
-$result = 25 % 6;
+
+`$result = 25 % 6;`
 
 - [ ] 4.167
 - [ ] 1.5
@@ -339,41 +419,59 @@ $string = Shylock in a Shakespeare's "Merchant of Venice" demands his pound of f
 - [ ] Открывающие и закрывающие одинарные кавычки следует заменить двойными кавычками, а апостроф следует экранировать обратной косой чертой.
 - [ ] Апостроф нужно экранировать обратной косой чертой, чтобы он не воспринимался как закрывающая кавычка.
 #### В42. Объект PDO под названием $db сконфигурирован в операциях с базой данных, включая проверку подлинности пользователей. свойства, связанные с пользователем на _______, если ни один пользователь не вошел в систему. будут правильно установлены функциями входа, когда пользователь войдет в систему.
- NULL
- TRUE
- FALSE
- 0
+- [ ] NULL
+- [ ] TRUE
+- [ ] FALSE
+- [ ] 0
 #### В43. Предположим, что $first_name и $family_name являются валидными, какое выражение невалидно?
 - [ ] echo $first_name. ‘ ‘. $family_name;
 - [ ] print $first_name, ‘ ‘, $family_name;
 - [ ] print $first_name. ‘ ‘. $family_name;
 - [ ] echo $first_name, ‘ ‘, $family_name;
 #### В44. Какой фрагмент скрипта демонстрирует инкапсуляцию?
-a)
+
+- [ ] &shy;
+
+```php
   class Cow extends Animal {
       private $milk;
   }
-b)
+```
+
+- [ ] &shy;
+
+```php
   class Cow {
       public $milk;
   }
   $daisy = new Cow();
   $daisy->milk = "creamy";
-c)
+```
+
+- [ ] &shy;
+
+```php
   class Cow {
       public $milk;
       function getMilk() {`
           return $this->milk;
       }
   }
-d)
+```
+
+- [ ] &shy;
+
+```php
   class Cow {
       private $milk;
       public function getMilk() {
           return $this->milk;
       }
   }
+```
 #### В45. Следующий XML-документ находится в books.xml. Какой скрипт выведет "Historical"?
+
+```xml
 <books>
     <book>
         <title>A Tale of Two Cities</title>
@@ -391,24 +489,43 @@ d)
         </categories>
     </book>
 </books>
-a)
+```
+
+- [ ] &shy;
+
+```php
   $books = simplexml_load_string('books.xml');
   echo $books->book[0]->categories->category[1];
-b)
+```
+
+- [ ] &shy;
+
+```php
   $books = simplexml_load_file('books.xml');
   echo $books->book[0]->categories->category[1];
-c)
+```
+
+- [ ] &shy;
+
+```php
   $books = SimpleXMLElement('books.xml');
   echo $books->book[0]->categories->category[1];
-d)
+```
+
+- [ ] &shy;
+
+```php
   $books = SimpleXML('books.xml');
   echo $books->book[0]->categories->category[1];
+```
 #### В46. Когда речь идет о значении переменной, в чем разница между NULL и пустым значением?
 - [ ] NULL — пустое значение; пустое значение — отсутствие значения.
 - [ ] Значение NULL имеет выделенный адрес в памяти; пустое значение — нет.
 - [ ] NULL относится к отсутствию значения для целого числа; пустое относится к отсутствию значения для строки.
 - [ ] NULL — отсутствие значения; empty — пустое значение.
 В47. Какое название подойдет для функции ниже?
+
+```php
 function doStuff($haystack, $needle) {
       $length = strlen($needle)
       if (substr($haystack, 0, $length) == $needle)
@@ -416,6 +533,8 @@ function doStuff($haystack, $needle) {
       else
         return false;
 }
+```
+
 - [ ] equals
 - [ ] endsWith
 - [ ] startsWith
@@ -426,7 +545,11 @@ function doStuff($haystack, $needle) {
 - [ ] session; request
 - [ ] request; session 
 #### В49. Дан скрипт, который позволяет определить, нажата ли кнопка, но он никогда не возвращает true. Какой шаг, скорее всего, поможет решить эту проблему?
+
+```php
 isset($_POST['submit'])
+```
+
 - [ ] Убедитесь, что поле ввода, отображающее кнопку, называется «submit».
 - [ ] Убедитесь, что вы не пропустили ни одной точки с запятой.
 - [ ] Распечатать все в сеансе print_r($_SESSION);
@@ -442,28 +565,45 @@ isset($_POST['submit'])
 - [ ] Геттеры и сеттеры инкапсулируют поля класса, делая их доступными только через его закрытые методы, а сами значения оставляют открытыми.
 - [ ] Геттеры и сеттеры — это методы, используемые для объявления или получения значений переменных, обычно закрытых.
 #### В52. Какие рекомендуемые настройки в файле конфигурации PHP(php.ini) для среды тестирования?
-a)
+
+- [ ] &shy;
+
+```php
   report_errors = E_ALL
   display_errors = On
-b)
+```
+
+- [ ] &shy;
+
+```php
   error_reporting = E_ALL
   display_errors = On
-c)
+```
+
+- [ ] &shy;
+
+```php
   error_reporting = E_ALL & ~E_NOTICE
   display_errors = Off
-d)
+```
+
+- [ ] &shy;
+
+```php
   error_reporting = E_ALL & ~E_NOTICE
   display_errors = On
-#### В53. Какое имя переменной PHP недопустимо?
-- [ ] $Double
-- [ ] $double
-- [ ] $_2times
-- [ ] $2times
+```
+
+#### В53. Какое имя переменной в PHP недопустимо?
+- [ ] `$Double`
+- [ ] `$double`
+- [ ] `$_2times`
+- [ ] `$2time`s
 #### В54. Какая команда извлечет подстроку домена («com») из строки $string = "https://cat-bounce.com";?
-- [ ] sub($string, -3)
-- [ ] substr($string, -3)
-- [ ] substr($string, 3)
-- [ ] $string.substr(-3)
+- [ ] `sub($string, -3)`
+- [ ] `substr($string, -3)`
+- [ ] `substr($string, 3)`
+- [ ] `$string.substr(-3)`
 #### В55. Где выполняется PHP-скрипт?
 - [ ] в браузере клиента
 - [ ] в виртуальной машине
@@ -475,7 +615,9 @@ d)
 - [ ] __CLASS__
 - [ ] __TRAIT__
 #### В57. Что будет отображено на дисплее в результате выполнения скрипта?
-  if( 1 == true){
+
+```php
+if( 1 == true){
         echo "1";
   }
 
@@ -490,124 +632,203 @@ d)
   if("php" === false){
       echo "4";
   }
+```
+
 - [ ] 134
 - [ ] 13
 - [ ] 1
 - [ ] 123
 #### В58. Когда следует использовать этот PHP-скрипт?
+
+```php
 $secret_word = 'if i ate spinach';
 setcookie('login', $_REQUEST['username']. ','. md5($_REQUEST['username'].$secret_word));
+```
+
 - [ ] когда пользователь собирается оплатить товар онлайн
 - [ ] когда товары помещаются в корзину
 - [ ] при первой регистрации
 - [ ] при каждом входе в систему, в целях безопасности
 #### В59. PHP "variable variable" принимает значение переменной и обрабатывает его как имя переменной. Например, если $var это переменная, то $$var это переменная переменной, имя которой является значением $var. Какой скрипт создает вывод ниже, используя переменную переменных?
+
+```plaintext
 Cat
 Dog
 Dog
-a)
+```
+
+- [ ] :
+
+```php
   $name = "Cat";
   $name = "Dog";
   echo $name . "<br/>";
   echo $$name . "<br/>";
   echo $Dog;
-b)
+```
+
+- [ ] :
+
+```php
   $name = "Cat";
   $$name = "Dog";
   echo $name . "<br/>";
   echo $$name . "<br/>";
   echo $Dog;
+```
+- [ ] :
 
-c)
+```php
   $name = "Cat";
   $$name = "Dog";
   echo $name . "<br/>";
   echo $$name . "<br/>";
   echo $Cat;
-d)
+```
+
+- [ ] :
+
+```php
   $name = "Cat";
   $$name = "Dog";
   echo $name . "<br/>";
   echo $name . "<br/>";
   echo $Cat;
+```
+
 #### В60. Представьте себе веб-приложение, созданное по архитектуре MVC, которое содержит тест и кнопку для его оценки. Когда пользователь нажимает кнопку «Оценить», какой компонент должен обрабатывать запрос?
 - [ ] router
 - [ ] controller
 - [ ] model
 - [ ] view
 #### В61. Какой скрипт можно использовать для продолжения поиска музыки пользователем на разных веб-страницах?
-a)
+
+
+- [ ] &shy;
+
+```php
   <?php
       start_session();
       $music = $_SESSION['music'];
   ?>
-b)
+```
+
+- [ ] &shy;
+
+```php
   <?php
       session_start();
       $music = $SESSION['music'];
   ?>
-c)
+```
+
+- [ ] &shy;
+
+```php
   <?php
       start_session();
       $music =$session['music'];
   ?>
-d)
+```
+
+- [ ] &shy;
+
+```php
   <?php
       session_start();
       $music = $_SESSION['music'];
   ?>
+```
+
 #### В62. Какой PHP-скрипт находит самую раннюю и самую позднюю даты из массива?
 a)
-  <?php
+ 
+
+- [ ] &shy;
+
+```php
   $dates = array('2018-02-01', '2017-02-02', '2015-02-03');
   echo "Latest Date: ". max($dates)."\n";
   echo "Earliest Date: ". min($dates)."\n";
   ?>
-b)
+```
+
+- [ ] &shy;
+
+```php
   <?php
   $dates = array('2018-02-01', '2017-02-02', '2015-02-03');
   echo "Latest Date: ". min($dates)."\n";
   echo "Earliest Date: ". max($dates)."\n";
   ?>
-c)
+```
+
+- [ ] &shy;
+
+```php
   <?php
   $dates = array('2018-02-01', '2017-02-02', '2015-02-03');
   echo "Latest Date: ". ($dates)."\n";
   echo "Earliest Date: ". ($dates)."\n";
   ?>
-d)
+```
+
+- [ ] &shy;
+
+```php
   <?php
   $dates = array('2018-02-01', '2017-02-02', '2015-02-03');
   echo "Latest Date: " max($dates)."\n";
   echo "Earliest Date: " min($dates)."\n";
   ?>
+```
+
 #### В63. Какой результат выполнения выражения в скрипте?
+
+```php
 $kilometers = 1;
 for (;;) {
     if ($kilometers > 5) break;
        echo "$kilometers kilometers = ".$kilometers*0.62140. " miles. <br />";
     $kilometers++;
 }
-a)
+```
+
+- [ ] &shy;
+
+```
   kilometers = 0.6214 miles.
   kilometers = 1.2428 miles.
   kilometers = 1.8642 miles.
   kilometers = 2.4856 miles.
   kilometers = 3.107 miles.
-b)
+```
+
+- [ ] &shy;
+
+```
   kilometers = 0.6214 miles.
   kilometers = 1.2428 miles.
   kilometers = 1.8642 miles
   kilometers = 2.4856 miles.
   kilometers = 3.107 miles.
   kilometers = 3.7284 miles.
-c)
+```
+
+- [ ] &shy;
+
+```
   kilometers = 1.2428 miles.
   kilometers = 1.8642 miles.
   kilometers = 2.4856 miles.
   kilometers = 3.107 miles.
-d)
+```
+
+- [ ] &shy;
+      
+```
 FATAL ERROR синтаксическая ошибка, неожиданный ')', ожидается ';' в строке номер 2
+```
 #### В64. Как правильно импортировать несколько классов из пространства имен в одном объявлении в PHP 8?
 - [ ] use myApp\myNamespace{ClassA, ClassB, ClassC};
 - [ ] use myApp\myNamespace\ClassA, ClassB, ClassC;
@@ -629,8 +850,12 @@ FATAL ERROR синтаксическая ошибка, неожиданный ')
 - [ ] $_ENV
 - [ ] $GLOBALS
 #### В68. Опишите, что произойдет, если запустить этот скрипт в тестовой среде.
+
+```php
 $capitals = ['UK' => 'London', 'France' => 'Paris'];
 echo "$capitals['france'] is the capital of France.";
+```
+
 - [ ] Выведет: «Paris is the capital of France.».
 - [ ] Выведет: «is the capital of France.».
 - [ ] Это вызывает синтаксическую ошибку, поскольку ключи массива в строке 1 заключены в кавычки.
@@ -651,15 +876,25 @@ echo "$capitals['france'] is the capital of France.";
 - [ ] Измените upload_max_filesize параметр конфигурации.
 - [ ] Обязательно используйте кодирование передачи по частям.
 #### В72. Что выводит этот скрипт?
+
+```php
 $my_text = 'The quick grey [squirrel].';
 preg_match('#\[(.*?)\]#', $my_text, $match);
 print $match[1]."\n";
+```
+
 - [ ] squirrel
 - [ ] The quick grey [squirrel].
 - [ ] [squirrel]
 - [ ] The quick grey squirrel.
 #### В73. Что выводит этот скрипт?
-$fruits = ['apple', 'orange', 'pear', 'mango', 'papaya']; $i = 0; echo $fruits[$i+=3];
+
+```php
+$fruits = ['apple', 'orange', 'pear', 'mango', 'papaya'];
+$i = 0;
+echo $fruits[$i+=3];
+```
+
 - [ ] mango
 - [ ] apple
 - [ ] a parse error
@@ -705,10 +940,25 @@ $array1 = ['country', 'capital', 'language']; $array2 = ['France', 'Paris', 'Fre
 - [ ] $twelfth_night = strtotime('December 25, 2025 + 12 days'); echo strftime('%d', $twelfth_night);
 - [ ] $xmas = new DateTime('Dec 25, 2025'); $twelfth_night = $xmas->add(strtotime('12 days')); echo $twelfth_night->format('D');
 #### В82. Какой цикл выводит все числа от 1 до 10 включительно?
-- [ ] $i = 1; while ($i < 10) { echo $i++ . '<br/>'; }
-- [ ] $i = 0; while ($i <= 10) { echo $i++ . '<br/>'; }
-- [ ] while ($i &lt;= 10) { echo ++$i . '<br/>'; }
-- [ ] $i = 0; while ($i < 10) { echo ++$i . '<br/>'; }
+- [ ]       `$i = 1;`
+            `while ($i < 10) {`
+            `echo $i++ . '<br/>';`
+            `}`
+
+- [ ]       `$i = 0;`
+            `while ($i <= 10) {`
+            `echo $i++ . '<br/>';`
+            `}`
+
+- [ ]       `while ($i &lt;= 10) {`
+            `echo ++$i . '<br/>';`
+            `}`
+
+- [ ]       `$i = 0;`
+            `while ($i < 10) {`
+            `echo ++$i . '<br/>';`
+            `}
+
 #### В83. Какие типы управляющих структур существуют в PHP?
 - [ ] break, continue, do-while, exception, for, foreach, if, switch, throw,while
 - [ ] values, operators, expressions, keywords,comments
@@ -720,6 +970,8 @@ $array1 = ['country', 'capital', 'language']; $array2 = ['France', 'Paris', 'Fre
 - [ ] throw
 - [ ] break
 #### Q85. Результат выполнения скрипта: расположение элементов в порядке убывания, вертикально и с пробелами между числами. Выберите правильный ответ.
+
+```php
 $numbers = array(4,6,2,22,11);
 sort($numbers);
 $arrlength = count($numbers);
@@ -727,6 +979,8 @@ for($x = 0; $x < $arrlength; $x++){
     echo $numbers[$x];
     echo "<br />";
     }
+```
+
 - [ ] Это не соответствует всем критериям, поскольку результирующие числа будут «2461122», что не имеет определенного порядка.
 - [ ] Это соответствует критериям, поскольку присутствует и sort() сортирует списки в порядке убывания.
 - [ ] Это не соответствует всем критериям, поскольку функция sort() сортирует индексированный массив в порядке возрастания. Таким образом, этот код отобразит "2 4 6 11 22" вертикально, но числа будут разделены.
@@ -742,6 +996,8 @@ for($x = 0; $x < $arrlength; $x++){
 - [ ] Генератор — это простой итератор, способный выполнять ряд результатов. Он имеет тот же синтаксис, что и функция, за исключением того, что он использует «yield» вместо «return».
 - [ ] Генератор — это функция, способная выдавать ряд результатов. 
 #### В88. Выбрать описание, которое лучше всего описывает предназначение скрипта?
+
+```php
 if( isset($user_info['url']) ) {
   $_SESSION["loggedIn"] = true;
   $_SESSION["username"] = $myusername;
@@ -749,6 +1005,8 @@ if( isset($user_info['url']) ) {
 } else {
   header("Location: error.htm");
 }
+```
+
 - [ ] При входе в систему он направляет всех пользователей на одну и ту же страницу.
 - [ ] Это скрипт входа в пользовательский портал на веб-сайте.
 - [ ] Он позволяет пользователю оставаться в системе в разных браузерах.
@@ -770,103 +1028,168 @@ echo 5 % 0.75;
 - [ ] Использовать$_GET['test'] == ''
 - [ ] все ответы правильные
 #### В92. Форма подписки на рассылку отправляется методом POST. В форме есть только одно поле: поле ввода текста с именем "email". Как проверить, пустое ли поле, и если пустое, вывести на сообщение: "The email cannot be empty"?
-a)
+
+- [ ] &shy;
+
+```php
 if(empty($_POST['email'])) {
     echo "The email cannot be empty";
 }
-b)
+```
+
+- [ ] &shy;
+
+```php
 if(empty($_GET['email'])) {
     echo "The email cannot be empty";
 }
-c)
+```
+
+- [ ] &shy;
+
+```php
 if(empty($_POST('email'))) {
     echo "The email cannot be empty";
 }
-d)
+```
+
+- [ ] &shy;
+
+```php
 if(isset($email)) {
     echo "The email cannot be empty";
 }
+```
+
 #### В93. Что такое тип fatal error PHP?
 - [ ] Возникновение этого типа ошибки приводит к прекращению выполнения скрипта.
 - [ ] Причины возникновения ошибок такого типа не определяются компилятором и приводят к неверным результатам.
 - [ ] Этот тип ошибок приводит к ошибочным результатам или может привести к завершению работы программы.
 - [ ] Этот тип ошибки приводит к завершению работы после отображения списка ошибок и номера строки, в которой они произошли.
 #### В94. Какой скрипт правильно проверяет указанный IP-адрес?
-a)
+
+
+- [ ] &shy;
+
+```php
 $valid = ip2long($ip) !== false;
-b)
+```
+
+- [ ] &shy;
+
+```php
 $ip_address = "164.12.2540.1";
 if(filter_var($ip_address, FILTER_VALIDATE_IP)){
   echo "$ip_address is a valid IP address";
 } else {
   echo "$ip_address is not a valid IP address";
 }
-c)
+```
+
+- [ ] &shy;
+
+```php
 $ip_address = "164.12.2540.1";
 if(validate_ip($ip_address)){
   echo "$ip_address is a valid IP address";
 } else {
   echo "$ip_address is not a valid IP address";
 }
-d)
+```
+
+- [ ] &shy;
+
+```php
 $ip_address = "164.12.2540.1"
 echo is_valid($ip_address, VALIDATE_IP);
+```
+
 #### В95. Что выводит этот скрипт?
+
+```php
     $i = 0;
     while($i < 6) {
     if($i++ == 3) break;
     }
     echo "loop stopped at $i by break statement";
+```
+
 - [ ] цикл остановлен на 3 с помощью оператора break
 - [ ] цикл остановлен на 4 с помощью оператора break
 - [ ] цикл остановлен на 6 с помощью оператора break
 - [ ] цикл остановлен на 2 оператором break
 #### В96. После создания объектов вы можете вызывать элементы функции, связанные с этим объектом, например, устанавливать имена и цены для трех объектов "Pet". Какой результат выполнения этого фрагмента скрипта?    
-$dof->setTitle("Spot");
+
+```php
+    $dof->setTitle("Spot");
     $cat->setTitle("Mimi");
     $horse-?setTitle("Trigger");
     $dog->setPrice(10);
     $cat->setPrice(15);
     $horse->setPrice(7);
     print_r($cat);
+```
+
 - [ ] Pet Object ( [title]=> Spot[price]=>10)
 - [ ] Pet Object ( [title]=> Mimi [price]=>15 )
 - [ ] Pet Object ( [title]=> Mimi[price]=>10 )
 - [ ] Pet Object ( [title]=> Trigger [price]=> 7)
 #### В97. Учитывая представленный ниже ассоциативный массив, какой PHP-код определяет элемент массива «яблоко»?
+
+```php
 $array = array(
 'fruit1' => 'apple',
 'fruit2' => 'orange',
 'fruit3' => 'grape',
 'fruit4' => 'apple',
 'fruit5' => 'apple');
-a)
+```
+
+- [ ] &shy;
+
+```php
 while ($fruit_name = current($array)) {
     if ($fruit_name == 'apple') {
         echo key($array).'<br />';
     }
     next($array);
 }
-b)
+```
+
+- [ ] &shy;
+
+```php
 while ($fruit_name = current($array)) {
     if ($fruitname == 'apple') {
         echo key($array).'<br />';
     }
     next($array);
 }
-c)
+```
+
+- [ ] &shy;
+
+```php
 while ($fruit_name = current($array)) {
     if ($fruit_name == 'apple')
         echo key($array).'<br />';
     }
     next($array);
 }
-d)
+```
+
+- [ ] &shy;
+
+```php
 while ($fruit_name = current($array)) {
     if ($fruit_name == 'apple') {
         echo key($array).'<br />';
     }
+```
+
 #### В98. Что возвращает этот скрипт?
+
+```php
 class Smurf {
 
   public $name = "Papa Smurf";
@@ -883,16 +1206,25 @@ class Smurf {
 $smurf = new Smurf("Smurfette");
 $smurf->set_name("Handy Smurf");
 echo $smurf->name;
+```
+
 - [ ] Handy Smurf
 - [ ] Smurfette
 - [ ] Papa Smurf
 #### В99. У вас есть онлайн-форма с полем ввода под названием "image" для загрузки файлов. Путь к каталогу загрузки - $path, какой код следует использовать, чтобы убедиться, что файл загружен из вашей формы в необходимый каталог?
-a)
+
+- [ ] &shy;
+
+```php
 if ($_FILES['image']['error'] === 0) {
       move_uploaded_file($_FILES)['image']['temp_name'],
           $path . $_FILES['image']['name']);
  )
-b)
+
+```
+- [ ] &shy;
+
+```php
 if ($_FILES['image']['error'] === false) {
       move_uploaded_file($_FILES)['image']['temp_name'],
           $path . $_FILES['image']['name']);
@@ -902,24 +1234,38 @@ if ($_FILES['image']['error'] == 0) {
       copy($_FILES)['image']['temp_name'],
           $path . $_FILES['image']['name']);
  )
-d)
+```
+
+- [ ] &shy;
+
+```php
 if ($_FILES['image']['error'] == false) {
       upload_file($_FILES)['image']['temp_name'],
           $path . $_FILES['image']['name']);
  )
+```
+
 #### В100. Какая суперглобальная переменная содержит информацию о заголовках, пути и местоположении скриптов?
 - [ ] $_GET
 - [ ] $GLOBALS
 - [ ] $_SESSION
 - [ ] $_SERVER
 #### В101. Используя цикл for, как написать PHP- скрипт для обратного счета от 10 до 1 в указанном порядке?
-a)
+
+
+- [ ] &shy;
+
+```php
 <?
 for ($i=1; $i <= 10; $i++) {
     echo $i;
 }
 ?>
-b)
+```
+
+- [ ] &shy;
+
+```php
 <?
 $i = 10;
 while($i>=0) {
@@ -927,19 +1273,31 @@ while($i>=0) {
     $i--;
 }
 ?>
-c)
+```
+
+- [ ] &shy;
+
+```php
 <?
     for($i = 10; $i > 0; $i++) {
         print "$i <br />\n";
     } // end for loop '''
 ?>
-d)
+```
+
+- [ ] &shy;
+
+```php
 <?
     for($i = 10; $i > 0; $i--) {
         print "$i <br />\n";
     } // end for loop
 ?>
+```
+
 #### В102. Что выводит этот скрипт?
+
+```php
 function knights(){
 return "a shrubbery";
 }
@@ -948,6 +1306,8 @@ if (knights())
 printf "you are just and fair";
 else
 printf "NI!";
+```
+
 - [ ] NI!
 - [ ] a syntax error
 - [ ] a shrubbery
@@ -955,31 +1315,49 @@ printf "NI!";
 #### В103. Какой скрипт определяет Россия как константу?
 Наша страна — Россия. В нашей стране всего 9 федеральных округов.
 
-a)
+- [ ] &shy;
+
+```php
 <?php
 $country = 'Россия';
 echo "Наша страна — {$country}. ";
 echo "В нашей стране всего 9 федеральных округов.";
 ?>
-b)
+```
+
+- [ ] &shy;
+
+```php
 <?php
 define('COUNTRY', 'Россия');
 echo "Наша страна — " . COUNTRY . ". ";
 echo "В нашей стране всего 9 федеральных округов.";
 ?>
-c)
+```
+
+- [ ] &shy;
+
+```php
 <?php
 const $country = "Россия";
 print "Наша страна — $country. ";
 print "В нашей стране всего 9 федеральных округов.";
 ?>
-d)
+```
+
+- [ ] &shy;
+
+```php
 <?php
 static string COUNTRY = 'Россия';
 echo "Наша страна — {COUNTRY}. ";
 echo "В нашей стране всего 9 федеральных округов.";
 ?>
+```
+
 #### В104. Что выводит этот скрипт?
+
+```php
 try{
 echo "bodacious";
 throw new Exception();
@@ -988,11 +1366,15 @@ echo "egregious";
 } finally {
 echo "excellent";
 }
+```
+
 - [ ] bodacious excellent
 - [ ] egregious excellent
 - [ ] bodacious egregious excellent
 - [ ] bodacious egregious
 #### В105. Что выводит этот скрипт?
+
+```php
 $believable = 'false';
 $myth = ' Луна сделана из зеленого сыра.';
 $calc = 10**3+1;
@@ -1002,6 +1384,8 @@ if ($believable) {
 else {
     echo $calc;
 }
+```
+
 - [ ] 10000
 - [ ] 31
 - [ ] 1001
@@ -1012,10 +1396,14 @@ else {
 - [ ] break
 - [ ] continue
 #### В107. Что выводит этот скрипт?
+
+```php
 $x = "5";
 $y = &$x;
 $y = "2$y";
 echo $x;
+```
+
 - [ ] 5
 - [ ] 2
 - [ ] 25
@@ -1026,8 +1414,12 @@ echo $x;
 - [ ] file_check()
 - [ ] Both file_exists() and is_file()
 #### В109. Что выводит следующий код?
+
+```php
 $array = array(1, 2, 3, 4, 5);
 echo array_sum($array) / count($array);
+```
+
 - [ ] 15
 - [ ] 3
 - [ ] 5
@@ -1048,9 +1440,13 @@ echo array_sum($array) / count($array);
 - [ ] remove_html()
 - [ ] sanitize_string()
 #### В113. Что выводит этот код?
+
+```php
 $str = "Hello";
 $str[0] = "J";
 echo $str;
+```
+
 - [ ] Hello
 - [ ] Jello
 - [ ] Выведет сообщение об ошибке
@@ -1071,10 +1467,14 @@ echo $str;
 - [ ] ord()
 - [ ] ascii_val()
 #### В117. Что выводит этот скрипт?
+
+```php
 $a = array(1, 2, 3);
 $b = array("one", "two", "three");
 $c = array_combine($a, $b);
 print_r($c);
+```
+
 - [ ] Array ( [0] => 1 [1] => 2 [2] => 3 )
 - [ ] Array ( [0] => one [1] => two [2] => three )
 - [ ] Array ( [1] => one [2] => two [3] => three )
@@ -1095,8 +1495,12 @@ print_r($c);
 - [ ] time()
 - [ ] timestamp()
 #### В121. Что выводит этот скрипт?
+
+```php
 $str = "abcdef";
 echo substr($str, -2, 1);
+```
+
 - [ ] f
 - [ ] e
 - [ ] ef
@@ -1117,6 +1521,8 @@ echo substr($str, -2, 1);
 - [ ] typeof()
 - [ ] is_array()
 #### В125. Что выводит этот скрипт?
+
+```php
 $x = 5;
 $y = 10;
 function myTest() {
@@ -1125,6 +1531,8 @@ function myTest() {
 }
 myTest();
 echo $y;
+```
+
 - [ ] 10
 - [ ] 5
 - [ ] 15
@@ -1140,15 +1548,19 @@ echo $y;
 - [ ] Это делает класс статичным.
 - [ ] Он делает все методы в классе закрытыми.
 #### В128. Какую функцию использовать для получения длины строки в PHP?
-count()
- length()
- strlen()
- size()
+- [ ] count()
+- [ ] length()
+- [ ] strlen()
+- [ ] size()
 #### В129. Что выводит этот скрипт?
+
+```php
 $a = "Hello";
 $b = &$a;
 $b = "World";
 echo $a;
+```
+
 - [ ] Hello
 - [ ] World
 - [ ] HelloWorld
@@ -1157,281 +1569,281 @@ echo $a;
 - [ ] <title>
 - [ ] <header>
 - [ ] <heading>
-d) <top>
+- [ ] <top>
 #### В131. Как правильно подключить внешний JavaScript файл script.js?
 - [ ] <script href="script.js">
 - [ ] <script name="script.js">
 - [ ] <script src="script.js">
-d) <script file="script.js">
+- [ ] <script file="script.js">
 #### В132. Какой язык используется для стилизации веб-страниц?
 - [ ] HTML
 - [ ] JavaScript
 - [ ] Python
-d) CSS
+- [ ] CSS
 #### В133. Какой метод HTTP используется для получения данных с сервера?
 - [ ] POST
 - [ ] GET
 - [ ] PUT
-d) DELETE
+- [ ] DELETE
 #### В134. Как создать многомерный массив в PHP?
 - [ ] array(array(1,2), array(3,4))
 - [ ] [1,2][3,4]
 - [ ] array[1,2][3,4]
-d) {[1,2],[3,4]}
+- [ ] {[1,2],[3,4]}
 #### В135. Какая команда используется для создания новой виртуальной машины в Vagrant?
 - [ ] vagrant new
 - [ ] vagrant create
 - [ ] vagrant init
-d) vagrant start
+- [ ] vagrant start
 #### В136. Какая команда Git используется для создания новой ветки?
 - [ ] git create branch
 - [ ] git branch new
 - [ ] git branch
-d) git checkout -b
+- [ ] git checkout -b
 #### В137. Что такое PDO в PHP?
 - [ ] PHP Data Objects
 - [ ] PHP Database Operations
 - [ ] PHP Data Operations
-d) PHP Database Objects
+- [ ] PHP Database Objects
 #### В138. Как объявить константу в PHP?
 - [ ] const NAME = value;
 - [ ] constant NAME = value;
 - [ ] define('NAME', value);
-d) set NAME = value;
+- [ ] set NAME = value;
 #### В139. Какой цикл в PHP выполняется минимум один раз?
 - [ ] while
 - [ ] for
 - [ ] do...while
-d) foreach
+- [ ] foreach
 #### В140. Что означает аббревиатура MVC?
 - [ ] Model View Connection
 - [ ] Model View Controller
 - [ ] Model View Computer
-d) Model View Class
+- [ ] Model View Class
 #### В141. Как получить длину массива в PHP?
 - [ ] len()
 - [ ] length()
 - [ ] count()
-d) size()
+- [ ] size()
 #### В142. Какой оператор используется для слияния строк в PHP?
 - [ ] +
 - [ ] .
 - [ ] &
-d) &&
+- [ ] &&
 #### В143. Как правильно начать PHP-скрипт?
 - [ ] <php>
 - [ ] <?php
 - [ ] <?
-d) <script php>
+- [ ] <script php>
 #### В144. Какой метод HTTP используется для обновления данных?
 - [ ] POST
 - [ ] GET
 - [ ] PUT
-d) DELETE
+- [ ] DELETE
 #### В145. Как объявить функцию в PHP?
 - [ ] function myFunction()
 - [ ] def myFunction()
 - [ ] void myFunction()
-d) new function()
+- [ ] new function()
 #### В146. Какой тип базы данных чаще всего используется с PHP?
 - [ ] MongoDB
 - [ ] MySQL
 - [ ] SQLite
-d) PostgreSQL
+- [ ] PostgreSQL
 #### В147. Что такое Laravel?
 - [ ] CMS
 - [ ] Framework
 - [ ] Database
-d) Programming Language
+- [ ] Programming Language
 #### В148. Как получить значение из GET-запроса в PHP?
 - [ ] request.GET['name']
 - [ ] $_GET['name']
 - [ ] GET('name')
-d) get.value('name')
+- [ ] get.value('name')
 #### В149. Какой тег используется для создания таблицы в HTML?
 - [ ] <table>
 - [ ] <tab>
 - [ ] <grid>
-d) <tabular>
+- [ ] <tabular>
 #### В150. Как проверить существование файла в PHP?
 - [ ] file_exists()
 - [ ] is_file()
 - [ ] check_file()
-d) exists()
+- [ ] exists()
 #### В151. Что такое Composer в PHP?
 - [ ] Text editor
 - [ ] Package manager
 - [ ] Framework
-d) Database
+- [ ] Database
 #### В152. Как объявить переменную в PHP?
 - [ ] var x = 5;
 - [ ] let x = 5;
 - [ ] $x = 5;
-d) int x = 5;
+- [ ] int x = 5;
 #### В153. Какая функция используется для перенаправления в PHP?
 - [ ] redirect()
 - [ ] header()
 - [ ] location()
-d) goto()
+- [ ] goto()
 #### В154. Как получить текущую дату в PHP?
 - [ ] date('Y-m-d')
 - [ ] getDate()
 - [ ] currentDate()
-d) now()
+- [ ] now()
 #### В155. Что такое Ajax?
 - [ ] Programming language
 - [ ] Database
 - [ ] Asynchronous JavaScript and XML
-d) Web server
+- [ ] Web server
 #### В156. Как закомментировать строку в PHP?
 - [ ] // Comment
 - [ ] # Comment
 - [ ] /* Comment */
-d) Все варианты верны
+- [ ] Все варианты верны
 #### В157. Какой метод массива удаляет последний элемент в PHP?
 - [ ] pop()
 - [ ] array_pop()
 - [ ] remove_last()
-d) delete_last()
+- [ ] delete_last()
 #### В158. Как получить тип переменной в PHP?
 - [ ] typeof()
 - [ ] gettype()
 - [ ] type()
-d) vartype()
+- [ ] vartype()
 #### В159. Что такое SVN?
 - [ ] Source Version Network
 - [ ] Subversion
 - [ ] Source Version Native
-d) System Version Network
+- [ ] System Version Network
 #### В160. Как создать сессию в PHP?
 - [ ] session_start()
 - [ ] start_session()
 - [ ] create_session()
-d) $_SESSION.start()
+- [ ] $_SESSION.start()
 #### В161. Какой порт по умолчанию используется для HTTP?
 - [ ] 8080
 - [ ] 443
 - [ ] 80
-d) 3306
+- [ ] 3306
 #### В162. Как подключить файл в PHP (с проверкой)?
 - [ ] include()
 - [ ] require()
 - [ ] import()
-d) using()
+- [ ] using()
 #### В163. Что такое cookie в веб-разработке?
 - [ ] Session data
 - [ ] Browser cache
 - [ ] Small data stored on client
-d) Server configuration
+- [ ] Server configuration
 #### В164. Как получить последнюю ошибку MySQL в PHP?
 - [ ] mysql_error()
 - [ ] get_last_error()
 - [ ] mysqli_error()
-d) db_error()
+- [ ] db_error()
 #### В165. Какой метод HTTP используется для удаления данных?
 - [ ] REMOVE
 - [ ] DELETE
 - [ ] UNLINK
-d) DESTROY
+- [ ] DESTROY
 #### В166. Как проверить, существует ли переменная в PHP?
 - [ ] exists()
 - [ ] isset()
 - [ ] has_var()
-d) defined()
+- [ ] defined()
 #### В167. Что такое XSS?
 - [ ] XML Style Sheet
 - [ ] Cross-site Scripting
 - [ ] Extended Style Sheet
-d) External Server Script
+- [ ] External Server Script
 #### В168. Как получить IP-адрес клиента в PHP?
 - [ ] getIP()
 - [ ] $_SERVER['REMOTE_ADDR']
 - [ ] ip_address()
-d) client_ip()
+- [ ] client_ip()
 #### В169. Какой тип данных не существует в PHP?
 - [ ] string
 - [ ] integer
 - [ ] char
-d) boolean
+- [ ] boolean
 
 Тема «Инструментальные средства разработки Internet-приложений»
 #### В170. Какой язык разметки используется для создания структуры веб-страницы?
 - [ ] CSS
 - [ ] JavaScript
 - [ ] HTML
-d) PHP
+- [ ] PHP
 #### В171. Что такое DOM в контексте веб-разработки?
 - [ ] Digital Object Model
 - [ ] Document Object Model
 - [ ] Data Object Model
-d) Document Oriented Model
+- [ ] Document Oriented Model
 #### В172. Какой фреймворк написан на Ruby?
 - [ ] Laravel
 - [ ] Django
 - [ ] Ruby on Rails
-d) Express.js
+- [ ] Express.js
 #### В173. Какой паттерн проектирования используется в большинстве современных фреймворков?
 - [ ] Singleton
 - [ ] MVC
 - [ ] Factory
-d) Observer
+- [ ] Observer
 #### В174. Какой тип данных отсутствует в JavaScript?
 - [ ] Number
 - [ ] String
 - [ ] Integer
-d) Boolean
+- [ ] Boolean
 
 Тема «Технологии управления крупными web-проектами» (В175-В179)
 #### В175. Какая команда используется для клонирования репозитория в Git?
 - [ ] git clone
 - [ ] git copy
 - [ ] git pull
-d) git fetch
+- [ ] git fetch
 #### В176. Что такое Vagrant?
 - [ ] Система контроля версий
 - [ ] Средство виртуализации
 - [ ] Web-сервер
-d) База данных
+- [ ] База данных
 #### В177. Какая команда создает новую ветку в SVN?
 - [ ] svn branch
 - [ ] svn create
 - [ ] svn copy
-d) svn new
+- [ ] svn new
 #### В178. Что такое VirtualBox?
 - [ ] Облачное хранилище
 - [ ] Система виртуализации
 - [ ] Веб-сервер
-d) Система контроля версий
+- [ ] Система контроля версий
 #### В179. Какая команда в Git используется для отправки изменений на удаленный сервер?
 - [ ] git commit
 - [ ] git push
 - [ ] git send
-d) git upload
+- [ ] git upload
 
 Тема «Способы и средства тестирования и размещения web-проекта на хостинге»
 #### В180. Какой протокол используется для безопасной передачи данных в web?
 - [ ] HTTP
 - [ ] FTP
 - [ ] HTTPS
-d) SMTP
+- [ ] SMTP
 #### В181. Какой порт по умолчанию используется для FTP?
 - [ ] 80
 - [ ] 21
 - [ ] 443
-d) 3306
+- [ ] 3306
 #### В182. Что такое IP-адрес версии IPv4?
 - [ ] 32-битный адрес
 - [ ] 64-битный адрес
 - [ ] 128-битный адрес
-d) 16-битный адрес
+- [ ] 16-битный адрес
 #### В183. Какой метод HTTP используется для отправки конфиденциальных данных?
 - [ ] GET
 - [ ] POST
 - [ ] PUT
-d) HEAD
+- [ ] HEAD
 #### В184. Что такое DNS?
 - [ ] Data Network Service
 - [ ] Domain Name System
 - [ ] Digital Network Service
-d) Domain Network Service
+- [ ] Domain Network Service
 
